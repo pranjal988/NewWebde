@@ -15,11 +15,7 @@ app.use(cors());
 
 
 // Use CORS middleware with specific options
-app.use(cors({
-    origin: 'http://localhost:5173', // Allow requests from this origin
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow specified HTTP methods
-    allowedHeaders: ['Content-Type', 'Authorization'] // Allow specified headers
-}));
+
 
 const corsOptions = {
     origin: '*', // Replace with your frontend URL
